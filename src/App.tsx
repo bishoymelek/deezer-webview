@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 import { Genres, GenreArtistList } from 'routes';
 import { LayoutContainer } from 'components/layout-container/LayoutContainer';
 import { ModalContainer, ModalRoute } from 'react-router-modal';
@@ -18,7 +23,7 @@ export default function App(): JSX.Element {
             <GenreArtistList />
           </ModalRoute>
           <Route exact path="/">
-            <h1>Hi Homepage</h1>
+            <Redirect to="genres" />
           </Route>
         </Switch>
       </LayoutContainer>

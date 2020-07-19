@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout, Menu } from 'antd';
 import logo from 'assets/deezer-logo.png';
 import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
 
 const dt = new Date();
 
@@ -14,10 +15,7 @@ function LayoutContainer(props: any): JSX.Element {
         <div className="logo">
           <img src={logo} alt="logo" />
         </div>
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['home']}>
-          <Menu.Item key="home">
-            <Link to="/">Home</Link>
-          </Menu.Item>
+        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['genres']}>
           <Menu.Item key="genres">
             <Link to="/genres">Genres</Link>
           </Menu.Item>
@@ -27,10 +25,11 @@ function LayoutContainer(props: any): JSX.Element {
         <div className="site-layout-content">{children}</div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>
-        Ant Design ©{dt.getFullYear()} Created by Ant UED
+        Deezer web-views ©{dt.getFullYear()} Created by
+        <a href="mailto:bishoymelekwadie@gmail.com"> Bishoy Melek</a>
       </Footer>
     </Layout>
   );
 }
 export { LayoutContainer };
-export default LayoutContainer;
+export default withRouter(LayoutContainer);
