@@ -1,4 +1,5 @@
 {
+  "extends": ["react-app", "plugin:prettier/recommended"],
   "parser": "babel-eslint",
   "plugins": [
     "react"
@@ -35,3 +36,4 @@
     }
   }  
 }
+

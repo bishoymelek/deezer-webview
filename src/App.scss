@@ -1,5 +1,5 @@
-@import 'antd/dist/antd.css';
 
+// Layout
 .site-layout-content {
   background: #fff;
   padding: 24px;
@@ -8,13 +8,86 @@
 .logo {
   width: 120px;
   height: 31px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px 24px 16px 0;
+  margin: auto 10px;
   float: left;
+  img {
+    max-height: 31px;
+  }
 }
-  [data-theme="dark"] .site-layout-content {
-    background: #141414;
+
+
+// Antd overwrite
+.ant-card-body {
+  padding-left: 0px;
+}
+
+
+
+// Spinner component with wrapper
+.spinner-wrapper {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 99999;  
+
+  .ant-spin {
+    z-index: 9991;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  [data-theme="dark"] .logo {
-    background: rgba(255,255,255,0.3);
+}
+
+
+.react-router-modal__modal {
+  overflow-y: scroll;
+    overflow-x: hidden;
+    height: 75%;
+    width: 75%;
+}
+
+.genre-card{
+  .ant-card-head-title{
+    text-align: center;
   }
+}
+
+// scroll-bar 
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%),$border-radius:5px) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+.react-router-modal__modal {
+  @include scrollbars(7px, grey, white);
+}
+
+
+// helper functions
+.p-2 {
+  padding:10px;
+}

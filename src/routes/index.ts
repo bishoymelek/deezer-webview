@@ -1,3 +1,4 @@
 import Genres from './GenresList';
+import GenreArtistList from './GenreArtistList';
 
-export { Genres }
+export { Genres, GenreArtistList };

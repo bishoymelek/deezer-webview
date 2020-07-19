@@ -1,9 +1,19 @@
 import React from 'react';
+import { Card } from 'antd';
+import { Link } from 'react-router-dom';
 
-export default function GenreCard(props) {
-    console.log(props);
-    
-    return (
-        <h1>Hiiii</h1>
-  )
+type GenreCardPropType = { name: string; id: string; picture: string };
+
+export default function GenreCard(props: GenreCardPropType): JSX.Element {
+  const { picture, name, id } = props;
+  return (
+    <Link to={`/genres/${id}`}>
+      <Card
+        className="genre-card"
+        hoverable
+        title={name}
+        cover={<img alt="example" src={picture} />}
+      />
+    </Link>
+  );
 }
