@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component/ArtistCard should render with given state from Redux store 1`] = `
+<div
+  className="ant-card ant-card-bordered ant-card-hoverable"
+>
+  <div
+    className="ant-card-cover"
+  >
+    <img
+      alt="artist-img"
+      src="pic.png"
+    />
+  </div>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <div
+      className="ant-card-meta"
+    >
+      <div
+        className="ant-card-meta-detail"
+      >
+        <div
+          className="ant-card-meta-title"
+        >
+          Hi
+        </div>
+        <div
+          className="ant-card-meta-description"
+        >
+          <a
+            href="https://placeholder.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Listen now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`My Connected React-Redux Component should render with given state from Redux store 1`] = `
+<div
+  className="ant-card ant-card-bordered ant-card-hoverable"
+>
+  <div
+    className="ant-card-cover"
+  >
+    <img
+      alt="artist-img"
+      src="pic.png"
+    />
+  </div>
+  <div
+    className="ant-card-body"
+    style={Object {}}
+  >
+    <div
+      className="ant-card-meta"
+    >
+      <div
+        className="ant-card-meta-detail"
+      >
+        <div
+          className="ant-card-meta-title"
+        >
+          Hi
+        </div>
+        <div
+          className="ant-card-meta-description"
+        >
+          <a
+            href="https://placeholder.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Listen now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

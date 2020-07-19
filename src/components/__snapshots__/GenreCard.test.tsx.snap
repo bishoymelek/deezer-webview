@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component/GenreCard should render with given state from Redux store 1`] = `
+<a
+  href="/genres/1"
+  onClick={[Function]}
+>
+  <div
+    className="ant-card genre-card ant-card-bordered ant-card-hoverable"
+  >
+    <div
+      className="ant-card-head"
+      style={Object {}}
+    >
+      <div
+        className="ant-card-head-wrapper"
+      >
+        <div
+          className="ant-card-head-title"
+        >
+          Hi
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-card-cover"
+    >
+      <img
+        alt="example"
+        src="pic.png"
+      />
+    </div>
+    <div
+      className="ant-card-body"
+      style={Object {}}
+    />
+  </div>
+</a>
+`;
