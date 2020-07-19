@@ -2,7 +2,7 @@ import React from 'react';
 import ArtistCard from 'components/ArtistCard';
 import { genresActionCreators } from 'state-config/genreStore';
 import { connect } from 'react-redux';
-import { Row, Col } from 'antd';
+import { Row, Col, PageHeader } from 'antd';
 import Spinner from 'components/Spinner';
 import { withRouter } from 'react-router';
 
@@ -30,6 +30,12 @@ class GenreArtistListComponent extends React.Component<
     return (
       <>
         <Spinner spinning={genreArtistsListApiLoading} />
+        <PageHeader
+          className="site-page-header"
+          title="Genre Top Artists"
+          subTitle="Choose your favorite artist"
+        />
+
         <Row gutter={[24, 24]} className="p-2">
           {genreArtistsList.length
             ? genreArtistsList.map((genreItem) => {

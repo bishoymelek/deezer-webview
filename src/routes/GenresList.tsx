@@ -2,7 +2,7 @@ import React from 'react';
 import GenreCard from 'components/GenreCard';
 import { genresActionCreators } from 'state-config/genreStore';
 import { connect } from 'react-redux';
-import { Row, Col } from 'antd';
+import { Row, Col, PageHeader } from 'antd';
 import Spinner from 'components/Spinner';
 import { withRouter } from 'react-router';
 
@@ -24,6 +24,11 @@ class Genres extends React.Component<
     return (
       <>
         <Spinner spinning={genresListApiLoading} />
+        <PageHeader
+          className="site-page-header"
+          title="Music Genres"
+          subTitle="Choose your favorite genre"
+        />
         <Row gutter={[16, 16]}>
           {genresList.length
             ? genresList.map((genreItem) => {
