@@ -6,7 +6,7 @@ exports[`Component/GenreCard should render with given state from Redux store 1`]
   onClick={[Function]}
 >
   <div
-    className="ant-card genre-card ant-card-bordered ant-card-hoverable"
+    className="ant-card genre-card sc-AxjAm bESufQ ant-card-bordered ant-card-hoverable"
   >
     <div
       className="ant-card-head"
@@ -26,7 +26,7 @@ exports[`Component/GenreCard should render with given state from Redux store 1`]
       className="ant-card-cover"
     >
       <img
-        alt="example"
+        alt="genre"
         src="pic.png"
       />
     </div>

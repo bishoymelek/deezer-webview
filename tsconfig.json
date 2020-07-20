@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
     "baseUrl": "src",
-    "paths": {
-      "@App/*": ["src/*"],
-      "lib/*": ["common/*"]
-    },
     "target": "es5",
     "lib": [
       "dom",
