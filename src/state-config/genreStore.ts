@@ -2,18 +2,21 @@ import { Store } from './Store';
 
 // initial store state
 const initialState = {
-  genreslist: [],
+  genresList: [],
   artistsList: [],
 };
 
-// actions list available
+/**
+ * actions list available
+ */
 const actionList = {
   getGenresList: 'genres/get_multiple',
   getGenreArtistsList: 'genres/get_artists_list',
 };
 
-// handlers for state in different actions
-const stateHandlers = {
+/**
+ * handlers for state in different actions
+ */ const stateHandlers = {
   [`${actionList.getGenresList}_finished`]: (state, action): any => {
     const { payload } = action;
     return {
@@ -32,6 +35,9 @@ const stateHandlers = {
   },
 };
 
+/**
+ * genres resource action creators list
+ */
 const genresActionCreators = {
   getGenresList: (): any => ({
     type: `api_request/${actionList.getGenresList}`,

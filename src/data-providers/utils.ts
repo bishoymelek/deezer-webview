@@ -1,7 +1,6 @@
+/* eslint-disable import/prefer-default-export */
 const dpMethodResponseMapper = async (res: any): Promise<any> => {
-  // console.log(res);
   const { data } = res;
-
   return {
     data,
     success: data ? 'success' : undefined,

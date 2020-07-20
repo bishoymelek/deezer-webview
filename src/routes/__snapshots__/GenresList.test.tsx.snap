@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Route/GenreArtistList should render with given state from Redux store 1`] = `
+Array [
+  <div
+    className="ant-page-header site-page-header ant-page-header-ghost"
+  >
+    <div
+      className="ant-page-header-heading"
+    >
+      <div
+        className="ant-page-header-heading-left"
+      >
+        <span
+          className="ant-page-header-heading-title"
+          title="Genre Top Artists"
+        >
+          Genre Top Artists
+        </span>
+        <span
+          className="ant-page-header-heading-sub-title"
+          title="Choose your favorite artist"
+        >
+          Choose your favorite artist
+        </span>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="ant-row p-2"
+    style={
+      Object {
+        "marginBottom": 12,
+        "marginLeft": -12,
+        "marginRight": -12,
+        "marginTop": -12,
+      }
+    }
+  />,
+]
+`;

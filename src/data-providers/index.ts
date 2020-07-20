@@ -1,3 +1,3 @@
-import { genreApiHandlers as genres } from './Genre';
+import { genreApiHandlers as genres } from './genres';
 
 export { genres };

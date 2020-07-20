@@ -3,22 +3,21 @@ import produce from 'immer';
 import { isRelatedAction, isApiLoadingAction } from './utils';
 
 const preDefinedStateHandlers = {
-  loading: (state, action): any => {
+  loading: (): { status: string } => {
     return {
       status: 'loading',
     };
   },
 };
 
-/* eslint-disable import/prefer-default-export */
 class Store {
-  name: any;
+  name: string;
 
   initialState: any;
 
   stateHandlers: any;
 
-  storeType: any;
+  storeType: string;
 
   constructor(
     initialState: object,
@@ -47,7 +46,6 @@ class Store {
                 return draft;
               }
             }
-            // console.log('actionName:', actionName);
             const actionHandler =
               this.stateHandlers && this.stateHandlers[actionName];
             if (!actionHandler) {
@@ -70,3 +68,4 @@ class Store {
 }
 
 export { Store };
+export default Store;
