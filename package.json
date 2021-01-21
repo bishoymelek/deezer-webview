@@ -12,7 +12,7 @@
     "@types/react-dom": "^16.9.0",
     "antd": "^4.4.2",
     "deezer-openapi": "git+ssh://git@github.com:bishoymelek/deezer-openapi.git",
-    "immer": "^7.0.5",
+    "immer": "^8.0.1",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
